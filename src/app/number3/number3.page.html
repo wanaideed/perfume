@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="about()">
+            <ion-icon name="information-circle-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Fragrences Choice..
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-text color="dark" class="ion-text-center">
+              <h4>Pilih Aktiviti <ion-text color="primary"><i>Bauwan</i></ion-text> ?</h4>
+            </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card [routerLink]="['/', 'number4','Segar']">
+            <img src="../../assets/segar.jpg" style="height: 150px;"> 
+            <ion-card-content>
+              <ion-button fill="outline" expand="full"  color="dark">
+                Segar
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card [routerLink]="['/', 'number4','Seksi']">
+                <img src="../../assets/seksi.jpg" style="height: 150px;">
+                <ion-card-content>
+                    <ion-button fill="outline" expand="full" color="dark">
+                        Seksi
+                      </ion-button>
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card [routerLink]="['/', 'number4','Anggun']">
+              <img src="../../assets/anggun.jpg" style="height: 150px;"> 
+              <ion-card-content>
+                  <ion-button fill="outline" expand="full"  color="dark">
+                      Anggun
+                    </ion-button>
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card [routerLink]="['/', 'number4','Tenang']">
+                <img src="../../assets/tenang.jpg" style="height: 150px;"> 
+                <ion-card-content>
+                    <ion-button fill="outline" expand="full"  color="dark">
+                        Tenang
+                      </ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

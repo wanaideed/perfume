@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="about()">
+          <ion-icon name="information-circle-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Fragrences Choice..
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+      <ion-grid>
+          <ion-row>
+            <ion-col>
+                <ion-text color="dark" class="ion-text-center">
+                  <h4>Use for <ion-text color="primary"><i>day</i></ion-text> ?</h4>
+                </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col offset="2" size="8">
+                <ion-card [routerLink]="['/', 'result','Klasik']">
+                    <img src="../../assets/klasik.jpg" style="height: 150px;">
+                    <ion-card-content>
+                        <ion-button fill="outline" expand="full" color="dark">
+                            Klasik
+                          </ion-button>
+                    </ion-card-content>
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col offset="2" size="8">
+              <ion-card [routerLink]="['/', 'result','Trendy']">
+                  <img src="../../assets/trendy.jpg" style="height: 150px;"> 
+                  <ion-card-content>
+                      <ion-button fill="outline" expand="full"  color="dark">
+                          Trendy
+                        </ion-button>
+                  </ion-card-content>
+                </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+  </ion-content>
+  

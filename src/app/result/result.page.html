@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="about()">
+            <ion-icon name="information-circle-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Fragrences Choice..
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content class="ion-padding">
+  <ion-grid>
+      <ion-row style="padding-top: 10px;">
+          <ion-col>
+              <ion-text color="dark" class="ion-text-center">
+                <h4>Use for <ion-text color="primary"><i>day</i></ion-text> ?</h4>
+              </ion-text>
+          </ion-col>
+        </ion-row>
+    <ion-row style="padding-top: 10px;">
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/night.jpg" style="height: 150px;"> 
+          <ion-card-content>
+              <p>
+                  I saw a werewolf with a Chinese menu in his hand.
+                  Walking through the <ion-text color="danger"><sub>streets</sub></ion-text> of Soho in the rain.
+                  He <ion-text color="primary"><i>was</i></ion-text> looking for a place called Lee Ho Fook's.
+                  Gonna get a <ion-text color="secondary"><a>big dish of beef chow mein.</a></ion-text>
+                  <ion-text color="danger"><ion-icon name="cut"></ion-icon></ion-text>
+                </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

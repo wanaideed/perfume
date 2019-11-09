@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="about()">
+            <ion-icon name="information-circle-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Fragrences Choice..
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content class="ion-padding" fullscreen>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-text color="dark" class="ion-text-center">
+              <h4>Pilih Aktiviti <ion-text color="primary"><i>gender</i></ion-text> ?</h4>
+            </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card [routerLink]="['/', 'number3','bersosial']">
+            <img src="../../assets/bersosial.jpg" style="height: 150px;"> 
+            <ion-card-content>
+              <ion-button fill="outline" expand="full"  color="dark">
+                Bersosial
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card [routerLink]="['/', 'number3','bersukan']">
+                <img src="../../assets/bersukan.jpg" style="height: 150px;">
+                <ion-card-content>
+                    <ion-button fill="outline" expand="full" color="dark">
+                        Bersukan
+                      </ion-button>
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card [routerLink]="['/', 'number3','temujanji']">
+              <img src="../../assets/temujanji.jpg" style="height: 150px;"> 
+              <ion-card-content>
+                  <ion-button fill="outline" expand="full"  color="dark">
+                      Temujanji
+                    </ion-button>
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card [routerLink]="['/', 'number3','bekerja']">
+                <img src="../../assets/bekerja.jpg" style="height: 150px;"> 
+                <ion-card-content>
+                    <ion-button fill="outline" expand="full"  color="dark">
+                        Bekerja
+                      </ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
